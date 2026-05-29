@@ -1,0 +1,67 @@
+/* ================= BOOK CAB PAGE ================= */
+
+.bookcab-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.bookcab-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 500px;
+  box-shadow: 0 20px 50px rgba(138, 99, 255, 0.25);
+  transition: 0.3s;
+}
+
+.bookcab-card:hover {
+  transform: translateY(-5px);
+}
+
+.bookcab-title {
+  text-align: center;
+  font-size: 26px;
+  color: #7b2ff7;
+  margin-bottom: 25px;
+}
+
+.bookcab-form input,
+.bookcab-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  border: 1px solid #e0d4ff;
+  background: #faf7ff;
+  transition: 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bookcab-form input:focus,
+.bookcab-form select:focus {
+  border-color: #8e2de2;
+  box-shadow: 0 0 8px rgba(142, 45, 226, 0.3);
+  outline: none;
+}
+
+.booking-result {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #f3e8ff, #e6d6ff);
+  border-left: 6px solid #8e2de2;
+}
+
+.booking-result h3 {
+  margin-bottom: 15px;
+  color: #6a11cb;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  font-size: 14px;
+}

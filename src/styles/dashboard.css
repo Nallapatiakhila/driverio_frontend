@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f3efff;
+}
+
+/* Layout */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #6a11cb, #9c6bff);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.menu-btn {
+  display: block;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.menu-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.logout-btn {
+  background: #ff4b6e;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #ff3358;
+}
+
+/* Main */
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Card */
+.hero-card {
+  background: white;
+  padding: 50px;
+  width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(106, 17, 203, 0.15);
+  text-align: center;
+}
+
+.hero-card h1 {
+  font-size: 32px;
+  color: #6a11cb;
+  margin-bottom: 10px;
+}
+
+.hero-card p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.primary-btn {
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #6a11cb, #9c6bff);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(106, 17, 203, 0.3);
+}
+
+.secondary-btn {
+  padding: 12px 25px;
+  border: 2px solid #6a11cb;
+  color: #6a11cb;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: #6a11cb;
+  color: white;
+}
