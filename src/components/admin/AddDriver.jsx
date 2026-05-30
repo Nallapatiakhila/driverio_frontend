@@ -20,7 +20,7 @@ const AddDriver = () => {
     const token = localStorage.getItem("token");
 
     try {
-      const res = await axios.post("http://localhost:8080/api/admin/add-driver", form, {
+      const res = await axios.post("https://driverio-backend-1.onrender.com/api/admin/add-driver", form, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
