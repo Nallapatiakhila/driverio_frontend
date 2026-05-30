@@ -58,7 +58,7 @@ function Register() {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:8080/api/auth/register", formData);
+      const res = await axios.post("https://driverio-backend-1.onrender.com/api/auth/register", formData);
       alert(res.data || "Registration successful!");
       navigate("/login");
     } catch (err) {
