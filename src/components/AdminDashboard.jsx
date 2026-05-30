@@ -15,7 +15,7 @@ function AdminDashboard() {
 
   useEffect(() => {
     // Fetch bookings to count stats
-    axios.get("http://localhost:8080/api/admin/all-bookings")
+    axios.get("https://driverio-backend-1.onrender.com/api/admin/all-bookings")
       .then(res => {
         const bookings = res.data;
         const total = bookings.length;
