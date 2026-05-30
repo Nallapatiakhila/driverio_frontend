@@ -16,7 +16,7 @@ function Register() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    
+
     // Clear cabType if role is changed from driver
     if (name === "role" && value !== "driver") {
       setFormData((prev) => ({
@@ -44,8 +44,8 @@ function Register() {
 
     // Blacklisted temporary domains
     const blockedDomains = [
-      "yopmail.com", "mailinator.com", "tempmail.com", "dispostable.com", 
-      "10minutemail.com", "guerrillamail.com", "sharklasers.com", 
+      "yopmail.com", "mailinator.com", "tempmail.com", "dispostable.com",
+      "10minutemail.com", "guerrillamail.com", "sharklasers.com",
       "getairmail.com", "burnermail.io", "trashmail.com", "fakeinbox.com",
       "temp-mail.org", "maildrop.cc", "throwawaymail.com", "tempmailaddress.com"
     ];

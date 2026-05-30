@@ -20,10 +20,10 @@ function AdminDashboard() {
         const bookings = res.data;
         const total = bookings.length;
         const pending = bookings.filter(b => b.status?.toLowerCase() === "pending").length;
-        
+
         // Extract unique drivers assigned
         const drivers = new Set(bookings.map(b => b.driverEmail).filter(Boolean));
-        
+
         setStats({
           totalBookings: total,
           pendingBookings: pending,

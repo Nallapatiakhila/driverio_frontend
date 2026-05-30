@@ -43,7 +43,7 @@ function BookCab() {
 
       alert("Booking Successful!");
       setBookingDetails(response.data);
-      
+
       // Clear form inputs on success
       setEmployeeName("");
       const email = localStorage.getItem("email") || "";
@@ -211,7 +211,7 @@ function BookCab() {
             <div className="booking-result-card animate-slide-right">
               <h3>🚗 Trip Scheduled</h3>
               <p className="result-notice">Please share the trip OTP with the passenger.</p>
-              
+
               <div className="result-details-grid">
                 <div className="detail-item">
                   <span className="detail-label">Assigned Driver</span>

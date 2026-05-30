@@ -22,7 +22,7 @@ const HrDashboard = () => {
         const total = bookings.length;
         const pending = bookings.filter(b => b.status?.toLowerCase() === "pending").length;
         const completed = bookings.filter(b => b.status?.toLowerCase() === "completed").length;
-        
+
         setStats({
           totalBookings: total,
           completedBookings: completed,

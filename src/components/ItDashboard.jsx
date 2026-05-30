@@ -84,7 +84,7 @@ function ItDashboard() {
         <div className="dashboard-card">
           <h2>IT Dashboard</h2>
           <p>Deploy and configure cab dispatch logistics. Create new employee ride schedules instantly.</p>
-          
+
           <button
             className="primary-btn"
             onClick={() => navigate("/hr-book-cab")}
