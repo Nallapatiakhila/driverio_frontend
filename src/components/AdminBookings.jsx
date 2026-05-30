@@ -10,7 +10,7 @@ function AdminBookings() {
   const [bookings, setBookings] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/api/admin/all-bookings")
+    axios.get("https://driverio-backend-1.onrender.com/api/admin/all-bookings")
       .then(res => {
         setBookings(res.data);
       })
