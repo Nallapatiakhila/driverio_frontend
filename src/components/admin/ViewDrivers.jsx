@@ -12,7 +12,7 @@ const ViewDrivers = () => {
     const token = localStorage.getItem("token");
 
     try {
-      const response = await axios.get("http://localhost:8080/api/admin/view-drivers", {
+      const response = await axios.get("https://driverio-backend-1.onrender.com/api/admin/view-drivers", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
