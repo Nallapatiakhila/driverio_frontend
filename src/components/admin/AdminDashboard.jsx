@@ -12,7 +12,7 @@ const AdminDashboard = () => {
     const token = localStorage.getItem("token");
 
     try {
-      const response = await axios.get("http://localhost:8080/api/admin/bookings", {
+      const response = await axios.get("https://driverio-backend-1.onrender.com/api/admin/bookings", {
         headers: {
           Authorization: `Bearer ${token}`
         }
