@@ -41,7 +41,7 @@ const AIChat = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:8080/api/ai/ask", {
+      const res = await axios.post("https://driverio-backend-1.onrender.com/api/ai/ask", {
         question: userText
       });
 
