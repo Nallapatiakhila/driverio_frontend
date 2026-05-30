@@ -18,7 +18,7 @@ const DriverDashboard = () => {
     const driverEmail = localStorage.getItem("email");
 
     try {
-      const response = await axios.get(`http://localhost:8080/api/driver/mytrips?email=${driverEmail}`, {
+      const response = await axios.get(`https://driverio-backend-1.onrender.com/api/driver/mytrips?email=${driverEmail}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
