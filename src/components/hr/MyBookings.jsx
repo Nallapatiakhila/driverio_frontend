@@ -18,7 +18,7 @@ const MyBookings = () => {
     try {
       const email = localStorage.getItem("email") || "";
       const res = await axios.get(
-        `http://localhost:8080/api/hr/all-bookings?email=${email}`
+        `https://driverio-backend-1.onrender.com/api/hr/all-bookings?email=${email}`
       );
       setBookings(res.data);
     } catch (err) {
