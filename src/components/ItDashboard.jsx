@@ -15,7 +15,7 @@ function ItDashboard() {
   useEffect(() => {
     // Fetch bookings to display stats dynamically
     const email = localStorage.getItem("email") || "";
-    axios.get(`http://localhost:8080/api/hr/all-bookings?email=${email}`)
+    axios.get(`https://driverio-backend-1.onrender.com/api/hr/all-bookings?email=${email}`)
       .then(res => {
         const bookings = res.data;
         setStats({
